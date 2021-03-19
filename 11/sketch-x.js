@@ -1,41 +1,28 @@
-const sketchNumber = "10";
-const sWidth = 1000;
-const sHeight = 1000;
-
-let a = 0.0;
-let aVelocity = 0.0;
-let aAcceleration = 0.1
-
-function preload() {
-	font = loadFont('PERTILI.TTF')
-}
-
 function setup() {
-	createCanvas(sWidth,sHeight);
+	var c = createCanvas(1000,1000); // width and height in pixels
+
+scale(11.5);
+noFill();
+stroke(255, 102, 0);
+bezier(85, 20, 10, 10, 90, 90, 15, 80);
+
+
+noFill();
+stroke(255, 102, 0);
+bezier(0, 20, 65, 10, 10, 90, 85, 80);
+
+
+
 }
 
 
 
 
-function draw() {
-	a+= aVelocity;
-	aVelocity +=aAcceleration;
-
-	aAcceleration = map(mouseX,0,width,-0.001, 0.001)
-	background(255)
-	stroke(0)
-	fill(127)
-	translate(width/2,height/2)
-	rotate(a)
-	rect(0,0,64,36)
-}
 
 
-
-
-//https://www.youtube.com/watch?v=4hA7G3gup-4
+//https://p5js.org/reference/#/p5/bezier
 
 function mousePressed() {
-	saveCanvas("sketch-10","jpg")
+	saveCanvas("sketch-11","jpg")
 }
 
