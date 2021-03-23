@@ -4,6 +4,7 @@ function setup() {
    for (let i = 0; i < distribution.length; i++) {
      distribution[i] = floor(randomGaussian(0, 95));
 
+translate(300, 600);
 }
    
  }
@@ -16,14 +17,20 @@ function draw() {
      rotate(QUARTER_PI / distribution.length);
      stroke(0);
      let dist = abs(distribution[i]);
-     line(500, 20, dist, 500);
+     //line(500, 20, dist, 500);
 
 
+scale(1.0005);
 
 stroke(0);
-//line(10, 15, 650, 700, 50);
+//line(10, 10, 300, 300);
+rotate(PI / 2);
+//rect(200, 200, 100, 200);
 rotate(RADIANS / 290);
 line(10, 700, 650, 15, 5);
+
+
+
 
    }
  }
