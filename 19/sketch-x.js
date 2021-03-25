@@ -23,9 +23,12 @@ function setup() {
 	});
 	console.log(pts)
 
-	stroke(255)
-	strokeWeight(2)
+	stroke(255);
+	strokeWeight(2);
 	noFill();
+	createLoop({
+		duration:10,
+		gif:true});
 
 	}
 
@@ -52,6 +55,9 @@ function draw() {
 	pop();
 
 }
+
+
+//https://medium.com/swlh/p5-js-texttopoints-function-c2e67c1c4682
 
 function mousePressed() {
 	saveCanvas("sketch-"+sketchNumber,"png")
