@@ -50,7 +50,7 @@ function draw() {
   for (let y = 0; y < tiles; y++) {
   	for (let x = 0; x < tiles; x++) {
       
-      const waveX = tan(currentFrame * 0.05 * ( x * y ) * 0.01) * 100
+      const waveX = sin(currentFrame * 0.05 * ( x * y ) * 0.01) * 100
       const waveY = atan(currentFrame * 0.02 * ( x * y ) * 0.05) * 100
       
       const sx = x * tileSize + waveX * sin(u)
