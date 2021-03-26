@@ -35,6 +35,10 @@ function setup() {
 
   // Throttle frame rate for performance
   frameRate(30)
+
+    createLoop({
+    duration:10,
+    gif:true});
 }
 
 
