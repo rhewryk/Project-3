@@ -22,6 +22,7 @@ function setup() {
 		simplifyThreshold: 0.09
 	});
 	console.log(pts)
+	frameRate(5);
 
 	stroke(255);
 	strokeWeight(2);

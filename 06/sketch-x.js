@@ -3,7 +3,7 @@ function setup() {
 background(255)
 
 translate(width / 1, height / 8.9);
-rotate(PI / 3.0);
+rotate(PI / 3.8);
 
 
 let a = 0.0;
